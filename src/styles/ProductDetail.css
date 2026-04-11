@@ -1,0 +1,157 @@
+.product-detail-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.2rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detail-top {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 1rem;
+}
+
+.detail-image {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  background: var(--color-bg);
+  border-radius: var(--radius);
+}
+
+.detail-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.detail-description {
+  color: var(--color-text-muted);
+}
+
+.detail-highlights {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.detail-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+
+.detail-card h2 {
+  margin-bottom: 0.6rem;
+}
+
+.detail-card h3 {
+  margin-top: 0.7rem;
+  margin-bottom: 0.35rem;
+}
+
+.detail-card ul {
+  display: grid;
+  gap: 0.4rem;
+  list-style: none;
+}
+
+.risk-track {
+  width: 100%;
+  height: 12px;
+  background: var(--color-border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.risk-fill {
+  height: 100%;
+}
+
+.risk-fill.risk-low {
+  background: var(--color-risk-low);
+}
+
+.risk-fill.risk-medium {
+  background: var(--color-risk-medium);
+}
+
+.risk-fill.risk-high {
+  background: var(--color-risk-high);
+}
+
+.principal-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.principal-input input,
+.compare-select-wrap select {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0.55rem 0.6rem;
+}
+
+.projection-table,
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.projection-table th,
+.projection-table td,
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid var(--color-border);
+  padding: 0.55rem;
+  text-align: left;
+}
+
+.compare-select-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0.7rem;
+}
+
+.compare-btn {
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary);
+  color: var(--color-surface);
+  border-radius: var(--radius);
+  padding: 0.55rem 0.9rem;
+  cursor: pointer;
+  margin-bottom: 0.7rem;
+}
+
+.not-found-card {
+  background: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .detail-top,
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,15 @@
+.return-display {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+.return-value {
+  color: var(--color-text);
+}
+
+.return-trend {
+  color: var(--color-risk-low);
+  font-size: 0.82rem;
+}
