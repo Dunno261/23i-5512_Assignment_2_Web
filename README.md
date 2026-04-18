@@ -2,7 +2,6 @@
 
 React SPA for financial product discovery, filtering, portfolio simulation, and profile-based recommendations.
 
-This project follows the assignment specification in [MASTER_SPEC.md](MASTER_SPEC.md).
 
 ## Tech Stack
 
